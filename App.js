@@ -3,13 +3,14 @@ import React from "react";
 import { Alert, Button, StyleSheet, Text, View } from "react-native";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
+import Question from "./components/Question";
 
 export default function App() {
   return (
-    <View>
+    <View style={styles.container}>
       <StatusBar style="auto" />
       <Header />
-      <View style={styles.container}></View>
+      <Question />
       <Navbar />
     </View>
   );
@@ -17,6 +18,8 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    height: "85%",
+    height: "99%",
+    display: "flex",
+    justifyContent: "space-between",
   },
 });
