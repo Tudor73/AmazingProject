@@ -5,13 +5,13 @@ function Navbar() {
   return (
     <View style={styles.container}>
       <View style={styles.item}>
-        <Text style={styles.text}>Page1</Text>
+        <Text style={styles.text}>Progress</Text>
       </View>
       <View style={styles.item}>
-        <Text style={styles.text}>Page2</Text>
+        <Text style={styles.text}>Home</Text>
       </View>
       <View>
-        <Text style={styles.text}>Page3</Text>
+        <Text style={styles.text}>Leaderbord</Text>
       </View>
     </View>
   );
