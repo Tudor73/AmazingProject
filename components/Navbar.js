@@ -6,8 +6,11 @@ import {
   TouchableOpacity,
   TouchableHighlight,
 } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 function Navbar() {
+  const navigation = useNavigation();
+
   return (
     <View style={styles.container}>
       <TouchableHighlight
@@ -15,7 +18,7 @@ function Navbar() {
         underlayColor="#777"
         style={styles.item}
         onPress={() => {
-          return null;
+          navigation.navigate("Progress");
         }}
       >
         <View>
@@ -28,7 +31,7 @@ function Navbar() {
         underlayColor="#777"
         style={styles.item}
         onPress={() => {
-          return null;
+          navigation.navigate("Home");
         }}
       >
         <View>
@@ -40,7 +43,7 @@ function Navbar() {
         underlayColor="#777"
         style={styles.item}
         onPress={() => {
-          return null;
+          navigation.navigate("Leaderboard");
         }}
       >
         <View>

@@ -7,7 +7,7 @@ import Question from "./components/Question";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Home from "./pages/Home";
-import Leaderbord from "./pages/Leaderbord";
+import Leaderboard from "./pages/Leaderboard";
 import Progress from "./pages/Progress";
 
 const Stack = createNativeStackNavigator();
@@ -18,8 +18,8 @@ export default function App() {
       <StatusBar style="auto" />
       <Stack.Navigator>
         <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="Leaderbord" component={Leaderbord} />
-        <Stack.Screen name="Prgoress" component={Progress} />
+        <Stack.Screen name="Leaderboard" component={Leaderboard} />
+        <Stack.Screen name="Progress" component={Progress} />
       </Stack.Navigator>
       <Navbar />
     </NavigationContainer>
