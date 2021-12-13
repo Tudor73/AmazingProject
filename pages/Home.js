@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import { Button, Text, View } from "react-native";
+import React from "react";
+import { View, Text } from "react-native";
 
 function Home() {
   return (
     <View>
-      <Text> SIUUUUUUUUUU </Text>
+      <Text>HOme</Text>
     </View>
   );
 }

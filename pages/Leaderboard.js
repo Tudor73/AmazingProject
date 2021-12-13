@@ -1,11 +1,11 @@
 import React from "react";
 import { View, Text } from "react-native";
 
-function Progress() {
+function Leaderboard() {
   return (
     <View>
-      <Text>Progress</Text>
+      <Text>Leaderboard</Text>
     </View>
   );
 }
-export default Progress;
+export default Leaderboard;

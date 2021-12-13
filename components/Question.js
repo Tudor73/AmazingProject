@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import { RadioButton } from "react-native-paper";
 
 function Question() {
@@ -7,11 +7,11 @@ function Question() {
   return (
     <View>
       <View style={styles.container}>
-        <Text> Sa va dau muie cu drag!</Text>
+        <Text>This is a question</Text>
       </View>
       <View style={styles.answersContainer}>
         <View style={styles.answer}>
-          <Text>Multumesc!</Text>
+          <Text>PRima optiune</Text>
           <RadioButton
             status={checked === 1 ? "checked" : "unchecked"}
             uncheckedColor="black"
@@ -21,7 +21,7 @@ function Question() {
           />
         </View>
         <View style={styles.answer}>
-          <Text>Sa mil iei !</Text>
+          <Text>A doua optiune</Text>
           <RadioButton
             status={checked === 2 ? "checked" : "unchecked"}
             onPress={() => {
@@ -30,7 +30,7 @@ function Question() {
           />
         </View>
         <View style={styles.answer}>
-          <Text>Buna treaba!</Text>
+          <Text>A treia optiune</Text>
           <RadioButton
             status={checked === 3 ? "checked" : "unchecked"}
             onPress={() => {
@@ -39,7 +39,7 @@ function Question() {
           />
         </View>
         <View style={styles.answer}>
-          <Text>Sa tragi de el!</Text>
+          <Text>A treia optiune</Text>
           <RadioButton
             status={checked === 4 ? "checked" : "unchecked"}
             onPress={() => {
@@ -74,6 +74,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
+    marginLeft: "2%",
   },
 });
 
