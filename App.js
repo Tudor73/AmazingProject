@@ -1,7 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { Alert, Button, StyleSheet, Text, View } from "react-native";
-import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Question from "./components/Question";
 import { NavigationContainer } from "@react-navigation/native";
