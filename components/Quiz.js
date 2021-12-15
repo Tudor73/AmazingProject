@@ -1,9 +1,9 @@
 import React from "react";
-import { View, Text } from "react-native";
-import Header from "./components/Header";
-import Question from "./components/Question";
+import { StyleSheet, View, Text } from "react-native";
+import Header from "./Header";
+import Question from "./Question";
 
-function Home() {
+function Quiz() {
   return (
     <View style={styles.container}>
       <Header />
@@ -19,3 +19,5 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
 });
+
+export default Quiz;
