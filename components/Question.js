@@ -3,9 +3,8 @@ import { StyleSheet, Text, View } from "react-native";
 import { RadioButton } from "react-native-paper";
 import { Card, Title, Paragraph } from "react-native-paper";
 
-function Question() {
+function Question(props) {
   const [checked, setChecked] = useState(0);
-
   return (
     <View>
       {/* <View style={styles.container}>
@@ -13,17 +12,13 @@ function Question() {
       </View> */}
       <Card style={styles.container}>
         <Card.Content>
-          <Text style={styles.text}>
-            {" "}
-            This is a question bla bla bla bla bla bla bla bla bla bla This is a
-            question bla bla bla bla bla bla bla bla bla bla This is a question
-          </Text>
+          <Text style={styles.text}>{props.question.text}</Text>
         </Card.Content>
       </Card>
       <Card style={styles.answersContainer}>
         <Card.Content>
           <View style={styles.answer}>
-            <Text>PRima optiune</Text>
+            <Text>{props.question.choices[0]}</Text>
             <RadioButton
               status={checked === 1 ? "checked" : "unchecked"}
               uncheckedColor="black"
@@ -33,7 +28,7 @@ function Question() {
             />
           </View>
           <View style={styles.answer}>
-            <Text>A doua optiune</Text>
+            <Text>{props.question.choices[1]}</Text>
             <RadioButton
               status={checked === 2 ? "checked" : "unchecked"}
               onPress={() => {
@@ -42,7 +37,7 @@ function Question() {
             />
           </View>
           <View style={styles.answer}>
-            <Text>A treia optiune</Text>
+            <Text>{props.question.choices[2]}</Text>
             <RadioButton
               status={checked === 3 ? "checked" : "unchecked"}
               onPress={() => {
@@ -51,7 +46,7 @@ function Question() {
             />
           </View>
           <View style={styles.answer}>
-            <Text>A treia optiune</Text>
+            <Text>{props.question.choices[3]}</Text>
             <RadioButton
               status={checked === 4 ? "checked" : "unchecked"}
               onPress={() => {
