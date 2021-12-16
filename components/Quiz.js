@@ -27,7 +27,6 @@ function Quiz() {
     </View>
   );
 }
-export default Quiz;
 
 const styles = StyleSheet.create({
   container: {
