@@ -8,6 +8,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Home from "./pages/Home";
 import Leaderboard from "./pages/Leaderboard";
 import Progress from "./pages/Progress";
+import Quiz from "./components/Quiz";
 
 const Stack = createNativeStackNavigator();
 
@@ -19,6 +20,7 @@ export default function App() {
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Leaderboard" component={Leaderboard} />
         <Stack.Screen name="Progress" component={Progress} />
+        <Stack.Screen name="Quiz" component={Quiz} />
       </Stack.Navigator>
       <Navbar />
     </NavigationContainer>

@@ -57,3 +57,5 @@ const styles = StyleSheet.create({
     right: 0,
   },
 });
+
+export default Quiz;
