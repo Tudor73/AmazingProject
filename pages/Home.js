@@ -7,44 +7,44 @@ function Home() {
   const navigation = useNavigation();
   return (
     <View style={styles.container}>
-      <TouchableHighlight
-        style={styles.item}
-        onPress={() => {
-          navigation.navigate("Quiz");
-        }}
-      >
-        <Card>
-          <Card.Content>
+      <Card style={styles.item}>
+        <Card.Content>
+          <TouchableHighlight
+            underlayColor=""
+            onPress={() => {
+              navigation.navigate("Quiz");
+            }}
+          >
             <Text style={styles.text}>Quiz</Text>
-          </Card.Content>
-        </Card>
-      </TouchableHighlight>
+          </TouchableHighlight>
+        </Card.Content>
+      </Card>
 
-      <TouchableHighlight
-        style={styles.item2}
-        onPress={() => {
-          navigation.navigate("Leaderboard");
-        }}
-      >
-        <Card>
-          <Card.Content>
+      <Card style={styles.item2}>
+        <Card.Content>
+          <TouchableHighlight
+            underlayColor=""
+            onPress={() => {
+              navigation.navigate("Leaderboard");
+            }}
+          >
             <Text style={styles.text}>Leaderboard</Text>
-          </Card.Content>
-        </Card>
-      </TouchableHighlight>
+          </TouchableHighlight>
+        </Card.Content>
+      </Card>
 
-      <TouchableHighlight
-        style={styles.item}
-        onPress={() => {
-          navigation.navigate("Progress");
-        }}
-      >
-        <Card>
-          <Card.Content>
+      <Card style={styles.item}>
+        <Card.Content>
+          <TouchableHighlight
+            underlayColor=""
+            onPress={() => {
+              navigation.navigate("Leaderboard");
+            }}
+          >
             <Text style={styles.text}>Compete</Text>
-          </Card.Content>
-        </Card>
-      </TouchableHighlight>
+          </TouchableHighlight>
+        </Card.Content>
+      </Card>
     </View>
   );
 }
