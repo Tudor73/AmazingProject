@@ -36,7 +36,6 @@ function Quiz() {
         mode="contained"
         style={styles.button}
         onPress={() => {
-          console.log(index);
           if (index >= 2) {
             return null;
           }
